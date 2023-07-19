@@ -407,6 +407,70 @@ nav ul li {
     width: 75%;
 }
 
+/* Careers Section CSS */
+.career-container {
+    position: relative;
+    color: #FFF;
+    margin-top: 93px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    padding: 50px 25px;
+}
+
+.career-image {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.career-image img {
+    width: 100%;
+}
+
+.career-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career-description {
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.career-description h2 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.career-description p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.career-zone {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.career-zone p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.career-zone-location {
+    text-align: right;
+}
 
 /* Games Section CSS */
 .games-container {
@@ -619,6 +683,35 @@ nav ul li {
         left: -60px;
     }
 
+    /* Careers Section CSS for Tablet*/
+    .career-container {
+        margin-top: 200px;
+    }
+
+    .career-image {
+        position: unset;
+        width: 100%;
+    }
+
+    .career-content {
+        flex-direction: column;
+    }
+
+    .career-description {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .career-description h2 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .career-description p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
     /* Games Section CSS for Tablet */
     .games-container {
         padding: 20px 0px;
@@ -626,7 +719,7 @@ nav ul li {
 
     .games-content {
         gap: 15px;
-        margin-top: 175px;
+        margin-top: 75px;
     }
 
     .games-btn {
@@ -820,6 +913,31 @@ nav ul li {
 
     .play-game-image img {
         width: 80%;
+    }
+
+    /* Careers Section CSS for Mobile*/
+    .career-container {
+        margin-top: 0px;
+        padding: 20px 20px;
+    }
+
+    .career-image {
+        position: unset;
+        width: 100%;
+    }
+
+    .career-content {
+        flex-direction: column;
+    }
+
+    .career-description {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .career-description p {
+        font-size: 10px;
+        line-height: 22px;
     }
 
     /* Games Section CSS for Mobile */
