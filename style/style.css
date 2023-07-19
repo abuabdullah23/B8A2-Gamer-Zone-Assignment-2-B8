@@ -1,0 +1,119 @@
+/* import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1440px;
+    max-height: 1080px;
+    margin: 0 auto;
+}
+
+/* common css */
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* Header css */
+.navbar {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-logo p {
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.follow-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 15px;
+}
+
+.follow-menu p {
+    background: transparent;
+}
+
+.follow-menu img {
+    width: 32px;
+    background: transparent;
+}
+
+
+/* =============== Responsive for Mobile Device =============== */
+@media only screen and (max-width:576px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 25px;
+    }
+
+    /* header => navbar */
+    .navbar {
+        padding-top: 50px;
+        box-shadow: none;
+        position: unset;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+
+
+
+}
