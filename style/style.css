@@ -81,6 +81,40 @@ nav ul li {
     background: transparent;
 }
 
+/* =============== Responsive for Tablet Device =============== */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 25px;
+    }
+
+    /* header => navbar */
+    .navbar {
+        padding-top: 50px;
+        box-shadow: none;
+        position: unset;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+
+}
+
 
 /* =============== Responsive for Mobile Device =============== */
 @media only screen and (max-width:576px) {
