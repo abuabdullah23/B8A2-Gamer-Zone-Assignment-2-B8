@@ -74,6 +74,7 @@ body {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 20px 0px;
     position: fixed;
+    z-index: 10;
     top: 0;
     width: 100%;
 }
@@ -272,6 +273,94 @@ nav ul li {
 }
 
 
+/* Play Game Section CSS */
+.play-game-container {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.play-game-content,
+.play-game-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-game-description {
+    height: 100%;
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+
+}
+
+.play-game-description2 {
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+.play-game-description h2 {
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.play-game-description2 h2 {
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.play-game-image-section {
+    height: 435px;
+    width: 50%;
+}
+
+.play-game-image div {
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.play-game-image2 div {
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+
+.play-game-child {
+    position: absolute;
+    bottom: 175px;
+    left: -30px;
+    width: 55%;
+}
+
+.play-game-child2 {
+    position: absolute;
+    bottom: 185px;
+    left: 300px;
+    width: 55%;
+}
+
+.play-game-image img {
+    width: 75%;
+}
+
+.play-game-image2 img {
+    width: 75%;
+}
+
+
+
 
 /* =============== Responsive for Tablet Device =============== */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -350,6 +439,34 @@ nav ul li {
     .online-game-content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Play Game Section CSS for Tablet */
+    .play-game-content {
+        flex-direction: column;
+    }
+
+    .play-game-content2 {
+        flex-direction: column-reverse;
+        margin-top: 120px;
+    }
+
+    .play-game-description,
+    .play-game-description2 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .play-game-image-section {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .play-game-child {
+        bottom: 220px;
+        left: -60px;
+    }
+
 
 }
 
@@ -455,6 +572,54 @@ nav ul li {
 
     .online-game-content {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Play Game Section CSS for Mobile */
+    .play-game-content {
+        flex-direction: column;
+    }
+
+    .play-game-content2 {
+        flex-direction: column-reverse;
+        margin-top: -150px;
+    }
+
+    .play-game-description,
+    .play-game-description2 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .play-game-image-section {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .play-game-description h2,
+    .play-game-description2 h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .play-game-description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .play-game-child {
+        bottom: 100px;
+        left: -35px;
+    }
+
+    .play-game-child2 {
+        bottom: 100px;
+        left: 180px;
+    }
+
+    .play-game-image img {
+        width: 80%;
     }
 
 }
