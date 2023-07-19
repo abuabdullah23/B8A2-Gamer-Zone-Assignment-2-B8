@@ -79,7 +79,8 @@ body {
     width: 100%;
 }
 
-.nav-logo {
+.nav-logo,
+.footer-logo {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -320,7 +321,8 @@ nav ul li {
     line-height: 50px;
 }
 
-.play-game-description p, .play-game-description2 p {
+.play-game-description p,
+.play-game-description2 p {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -367,7 +369,106 @@ nav ul li {
 }
 
 
+/* Games Section CSS */
+.games-container {
+    background: linear-gradient(90deg, #ff42a508 0%, #ff42a508 100%);
+    padding: 20px 0px;
+}
 
+.games-content {
+    margin: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-btn {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px 10px 10px;
+    width: fit-content;
+}
+
+.games-btn img {
+    width: 48px;
+    height: 48px;
+}
+
+.games-btn:hover {
+    border: 3px solid #F948B2;
+    border-radius: 50px;
+    transition: .15s ease-in-out;
+}
+
+.games-btn h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Footer section css */
+.footer-container {
+    background: #0B0223;
+    padding: 100px 0px;
+}
+
+.footer-logo p {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.footer-menu {
+    margin-top: 25px;
+    color: white;
+}
+
+.footer-menu ul {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-menu ul li {
+    list-style: none;
+}
+
+.footer-policy,
+.copyright {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: #ffffff99;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.copyright {
+    margin-top: 0;
+    gap: 10px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
 
 /* =============== Responsive for Tablet Device =============== */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -474,6 +575,41 @@ nav ul li {
         left: -60px;
     }
 
+    /* Games Section CSS for Tablet */
+    .games-container {
+        padding: 20px 0px;
+    }
+
+    .games-content {
+        gap: 15px;
+        margin-top: 175px;
+    }
+
+    .games-btn {
+        gap: 10px;
+    }
+
+    .games-btn img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .games-btn h4 {
+        font-size: 16px;
+    }
+
+    /* Footer for Tablet */
+    .footer-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 150px;
+    }
+
+    .footer-policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 50px;
+    }
 
 }
 
@@ -628,6 +764,63 @@ nav ul li {
 
     .play-game-image img {
         width: 80%;
+    }
+
+    /* Games Section CSS for Mobile */
+    .games-container {
+        padding: 10px 0px;
+    }
+
+    .games-content {
+        gap: 5px;
+    }
+
+    .games-btn {
+        gap: 10px;
+    }
+
+    .games-btn:hover {
+        border: 2px solid #F948B2;
+    }
+
+    .games-btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .games-btn h4 {
+        font-size: 12px;
+    }
+
+    /* Footer for Tablet */
+    .footer-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 20px;
+        gap: 15px;
+    }
+
+    .footer-social {
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 0px 50px;
+    }
+
+    .footer-social img {
+        width: 40px;
+    }
+
+    .footer-policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
