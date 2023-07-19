@@ -508,6 +508,10 @@ nav ul li {
     transition: .15s ease-in-out;
 }
 
+.games-btn:hover h4{
+    color: #F948B2;
+}
+
 .games-btn h4 {
     font-size: 18px;
     font-style: normal;
@@ -817,6 +821,12 @@ nav ul li {
         width: 100%;
         margin-top: 50px;
         padding: 50px 0;
+    }
+
+    .banner-description h1 {
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 800;
     }
 
     .banner-img {
