@@ -426,6 +426,7 @@ nav ul li {
 
 .career-image img {
     width: 100%;
+    height: fit-content;
 }
 
 .career-content {
